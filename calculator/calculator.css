@@ -1,0 +1,100 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+user-select: none;
+}
+html {
+  height: 100%;
+  background: url(imgCal/back.jpeg);
+  background-size: cover;
+}
+
+.calculator {
+  width: 325px;
+  height: auto;
+  overflow:hidden;
+  margin: 100px auto;
+  padding: 20px 20px 9px;
+  background: rgba(2, 3, 49, 0.322);
+  border-radius: 3px;
+  box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.keys, .top {overflow: hidden;}
+
+
+.keys span, .top .clear {
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	width: 66px;
+	height: 56px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	margin: 0 7px 11px 0;
+	color: #ccc;
+	line-height: 56px;
+	text-align: center;
+	user-select: none;
+	transition: all 0.3s ease;
+}
+.keys span.operator {
+	background: rgba(69, 0, 160, 0.671);
+	margin-right: 0;
+}
+.top .clear {
+	background: transparent;
+	box-shadow: none;
+	color: #40da4d96;
+	font-weight: 520;
+	font-size:large;
+  width:56px;
+  margin-top: 125px;
+  margin-left: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.keys span:hover {
+	background: rgba(255, 255, 255, 0.418);
+	color: #333;
+}
+.keys span.eval:hover {
+	background: #1a9e0e;
+	color: white;
+}
+
+.top span.clear:hover {
+  border-radius:190px;
+	background: rgba(0,0,0,0.1);
+	color: white;
+}
+.keys span.eval:active {
+	top: 5px;
+}
+.top span.clear:active {
+	top: 5px;
+}
+.keys span:active{
+  top: 5px;
+}
+
+.top .screen {
+    height: 65px;
+	width: 285px;
+	padding-left: 60px;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.2);
+	font-size: 27px;
+  font-weight:normal;
+	line-height: 40px;
+	color:   #40da4d96;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  letter-spacing: 1px;
+  border:none;
+}
